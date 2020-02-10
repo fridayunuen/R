@@ -1,0 +1,20 @@
+###Ingresando los datos
+
+nombre<-c("Frida", "Yunuen", "Ximena", "Paola", "Pilar", "Guadalupe", "Marcelino", "Jorge", "Juan", "Amada")
+
+edad<-c(20, 21, 12,14,43,65,44,40,58,59)
+
+sexo<-c("femenino","femenino", "femenino", "femenino", "femenino", "femenino", "masculino", "masculino", "masculino", "femenino" )
+
+nivel_educativo<-c("Licenciatura", "Licenciatura", "Primaria", "Secundaria", "Preparatoria", "Licenciatura", "Licenciatura", "Secundaria", "Secundaria", "Secundaria")
+
+sitconyugal<- c("soltero", "soltero", "soltero", "soltero", "soltero", "soltero", "casado", "soltero", "casado", "casado")
+
+residencia<-c("departamento", "departamento", "casa", "departamento", "casa", "departamento", "casa", "departamento", "casa", "casa")
+
+numperhogar<-c(1,1,2,2,2,2,6,1,2,2)
+
+info<- data.frame(nombre, edad, sexo, nivel_educativo, sitconyugal, residencia, numperhogar)
+
+###Creando la muestra
+muestra<-sample(1:nrow(info),5)
